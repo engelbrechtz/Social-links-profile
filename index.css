@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Manrope", serif;
+    box-sizing: border-box;
+}
+
+
+/* Variables */
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+body{
+    background: var(--grey-900);
+}
+
+/* Card  */
+.card_container{
+    background: var(--grey-800);
+    max-width: 350px;
+    height: 70vh;
+    border-radius: 20px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin: 0 auto;
+    position: relative;
+    top: 45px;
+    cursor: default;
+}
+
+.card_container:hover{
+    
+}
+
+.card_container .card_content{
+    position: absolute;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    width: 100%;
+}
+
+.card_container .card_content .card_content_profile{
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.card_container .card_content .card_content_profile .location{
+    color: var(--green);
+}
+
+.card_container .card_content .card_content_profile,p{
+    margin-top: 15px;
+}
+
+.card_container .card_content .card_content_profile img{
+    border-radius: 100%;
+    width: 100px;
+    -webkit-user-drag: none;
+}
+
+.card_container .card_content .card_content_profile .profile_links_container{
+    display: grid;
+    outline: none;
+    border: none;
+
+}
+
+.card_container .card_content .card_content_profile .profile_links_container button{
+    padding: 10px;
+    top: 10px;
+    position: relative;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 3px;
+    outline: none;
+    border: none;
+    background: var(--grey-700);
+    color: white;
+    font-weight: bold;
+}
+
+.card_container .card_content .card_content_profile .profile_links_container button:hover{
+    background: var(--green);
+    font-weight: bold;
+}
+
+/* Responsive Design queries  */
+@media screen and (max-width: 748px) {
+    body{
+        background: var(--grey-800);
+    }
+}
